@@ -171,13 +171,13 @@ class AdarshPatel:
 ---
 
 <!-- ══════════════════════════════════════════════════ -->
-<!--          CONTRIBUTION SNAKE                       -->
+<!--          CONTRIBUTION ACTIVITY GRAPH              -->
 <!-- ══════════════════════════════════════════════════ -->
 
-## 🐍 Contribution Snake
+## 📈 Contribution Activity
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/adarshaldkar/adarshaldkar/output/github-contribution-grid-snake-dark.svg" alt="Contribution Snake" width="100%"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=adarshaldkar&theme=tokyo-night&hide_border=true&color=915EFF&line=915EFF&point=c4b5fd&area=true&area_color=915EFF" width="100%" alt="Contribution Activity Graph"/>
 </div>
 
 <br/>
@@ -210,36 +210,3 @@ class AdarshPatel:
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:915EFF,100:0d1117&height=100&section=footer" width="100%"/>
 </div>
-
-
-name: Generate Contribution Snake
-
-on:
-  schedule:
-    - cron: "0 0 * * *"   # Runs every day at midnight UTC
-  workflow_dispatch:        # Allows manual trigger from GitHub Actions tab
-  push:
-    branches:
-      - main
-
-jobs:
-  generate:
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-
-    steps:
-      - name: Generate Snake Animation
-        uses: Platane/snk/svg-only@v3
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-
-      - name: Push Snake to Output Branch
-        uses: crazy-max/ghaction-github-pages@v3
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
