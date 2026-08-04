@@ -180,6 +180,13 @@ class AdarshPatel:
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=adarshaldkar&theme=tokyo-night&hide_border=true&color=915EFF&line=915EFF&point=c4b5fd&area=true&area_color=915EFF" width="100%" alt="Contribution Activity Graph"/>
 </div>
 
+## 🐍 Contribution Snake
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/adarshaldkar/adarshaldkar/output/github-contribution-grid-snake-dark.svg" alt="Contribution Snake" width="100%"/>
+</div>
+
+
 <br/>
 
 ---
