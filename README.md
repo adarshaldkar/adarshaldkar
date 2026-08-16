@@ -42,7 +42,7 @@
 ```python
 class AdarshPatel:
     location    = "Puducherry, India 🇮🇳"
-    education   = "B.Tech CSE @ MVIT  |  CGPA 7.7  |  2022–2026"
+    education   = "B.Tech ECE @ MVIT  |  CGPA 7.7  |  2022–2026"
     role        = "AI Systems Engineer & Full Stack Developer"
 
     building    = ["MindCare AI — Agentic Mental Health Platform",
